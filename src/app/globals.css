@@ -17,6 +17,26 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
   }
+  
+  /* Mobile-specific improvements */
+  @media (max-width: 640px) {
+    /* Improve touch targets */
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    /* Better mobile spacing */
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    /* Improve mobile readability */
+    p {
+      line-height: 1.6;
+    }
+  }
 }
 
 @layer components {
@@ -37,22 +57,22 @@
   
   /* Primary button with logo colors */
   .btn-primary {
-    @apply bg-gradient-to-r from-primary-main to-primary-accent text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+    @apply bg-gradient-to-r from-primary-main to-primary-accent text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105;
   }
   
   /* Secondary button with logo colors */
   .btn-secondary {
-    @apply border-2 border-primary-highlight text-primary-highlight font-semibold py-3 px-6 rounded-full hover:bg-primary-highlight hover:text-white transition-all duration-300;
+    @apply border-2 border-primary-highlight text-primary-highlight font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-full hover:bg-primary-highlight hover:text-white transition-all duration-300;
   }
   
   /* Logo-inspired accent button */
   .btn-accent {
-    @apply bg-gradient-to-r from-primary-secondary to-primary-accent text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+    @apply bg-gradient-to-r from-primary-secondary to-primary-accent text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105;
   }
   
   /* Highlight button with golden accent */
   .btn-highlight {
-    @apply bg-gradient-to-r from-primary-highlight to-primary-accent text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+    @apply bg-gradient-to-r from-primary-highlight to-primary-accent text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105;
   }
 }
 

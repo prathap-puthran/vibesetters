@@ -17,25 +17,25 @@ const ServiceCard = ({ icon, title, description, delay = 0 }: ServiceCardProps) 
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay }}
       viewport={{ once: true }}
-              className="group relative bg-white/5 backdrop-blur-custom border border-primary-indigo/20 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 card-hover"
+              className="group relative bg-white/5 backdrop-blur-custom border border-primary-indigo/20 rounded-2xl p-4 sm:p-6 hover:bg-white/10 transition-all duration-300 card-hover"
     >
       {/* Gradient Border Effect */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary-indigo/20 to-primary-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
       <div className="relative z-10">
         {/* Icon */}
-        <div className="w-16 h-16 bg-gradient-to-r from-primary-indigo to-primary-accent rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-          <div className="text-white text-2xl">
+        <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-primary-indigo to-primary-accent rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+          <div className="text-white text-xl sm:text-2xl">
             {icon}
           </div>
         </div>
 
         {/* Content */}
-        <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-primary-indigo transition-colors duration-300">
+        <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 group-hover:text-primary-indigo transition-colors duration-300">
           {title}
         </h3>
         
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
           {description}
         </p>
 

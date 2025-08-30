@@ -46,7 +46,7 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-primary-purple to-primary-purple/90">
+    <section id="services" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-primary-purple to-primary-purple/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -54,18 +54,18 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             Our <span className="gradient-text">Services</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-2 sm:px-0">
             From concept to execution, we bring your vision to life with our comprehensive range of creative services
           </p>
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
@@ -83,12 +83,12 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mt-16"
+          className="text-center mt-12 sm:mt-16"
         >
-          <p className="text-lg text-gray-300 mb-6">
+          <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6">
             Ready to transform your ideas into extraordinary experiences?
           </p>
-          <a href="/contact" className="btn-primary text-lg px-8 py-4">
+          <a href="/contact" className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto text-center">
             Get Your Free Consultation
           </a>
         </motion.div>

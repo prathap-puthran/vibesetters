@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #12084a; /* primary-background - updated to logo color */
+    color: #FFFFFF; /* ui-text-primary */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  /* Logo-inspired gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-white to-primary-accent bg-clip-text text-transparent;
+  }
+  
+  /* Logo-inspired gradient border */
+  .gradient-border {
+    @apply border-2 border-transparent bg-gradient-to-r from-primary-main to-primary-accent bg-clip-border;
+  }
+  
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+  
+  /* Primary button with logo colors */
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-main to-primary-accent text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  /* Secondary button with logo colors */
+  .btn-secondary {
+    @apply border-2 border-primary-highlight text-primary-highlight font-semibold py-3 px-6 rounded-full hover:bg-primary-highlight hover:text-white transition-all duration-300;
+  }
+  
+  /* Logo-inspired accent button */
+  .btn-accent {
+    @apply bg-gradient-to-r from-primary-secondary to-primary-accent text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  /* Highlight button with golden accent */
+  .btn-highlight {
+    @apply bg-gradient-to-r from-primary-highlight to-primary-accent text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+  }
+}
+
+@layer utilities {
+  /* Text shadow for better readability */
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Custom backdrop blur */
+  .backdrop-blur-custom {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  /* Logo-inspired gradients */
+  .bg-gradient-logo {
+    background: linear-gradient(135deg, #24a4ef 0%, #4f56e4 50%, #dd717e 100%);
+  }
+  
+  .bg-gradient-brand {
+    background: linear-gradient(135deg, #4f56e4 0%, #dd717e 100%);
+  }
+  
+  .bg-gradient-vibes {
+    background: linear-gradient(135deg, #12084a 0%, #24a4ef 50%, #dd717e 100%);
+  }
+} 

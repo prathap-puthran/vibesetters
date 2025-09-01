@@ -263,7 +263,7 @@ const ContactSection = () => {
             </div>
 
             {/* Map Placeholder */}
-            <div className="bg-white/5 backdrop-blur-custom border border-primary-indigo/20 rounded-2xl p-8">
+            {/* <div className="bg-white/5 backdrop-blur-custom border border-primary-indigo/20 rounded-2xl p-8">
               <h3 className="text-xl font-bold text-white mb-4">Our Location</h3>
               <div className="aspect-video bg-gradient-to-br from-primary-indigo/20 to-primary-accent/20 rounded-xl flex items-center justify-center">
                 <div className="text-center">
@@ -272,7 +272,7 @@ const ContactSection = () => {
                   <p className="text-primary-indigo text-xs mt-1">Google Maps integration coming soon</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
 

@@ -94,8 +94,8 @@ const CallToAction = () => {
             </p>
             <p className="text-gray-300">
               <strong className="text-white">Email:</strong>{' '}
-              <a href="mailto:info@vibesetters.in" className="text-primary-indigo hover:text-primary-accent transition-colors duration-200">
-                info@vibesetters.in
+              <a href="mailto:vibesettersindia@gmail.com" className="text-primary-indigo hover:text-primary-accent transition-colors duration-200">
+                vibesettersindia@gmail.com
               </a>
             </p>
           </motion.div>

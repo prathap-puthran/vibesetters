@@ -28,7 +28,7 @@ const AboutSection = () => {
 
   const milestones = [
     {
-      year: '2018',
+      year: '2025',
       title: 'Company Founded',
       description: 'Vibesetters India was established with a vision to revolutionize creative services in India.'
     },
@@ -202,49 +202,6 @@ const AboutSection = () => {
                 </blockquote>
               </motion.div>
             ))}
-          </div>
-        </motion.div>
-
-        {/* Timeline Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Our <span className="gradient-text">Journey</span>
-          </h2>
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-primary-indigo to-primary-accent h-full hidden lg:block" />
-            
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className={`relative flex items-center ${
-                    index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                  } flex-col lg:space-x-8 space-y-4 lg:space-y-0`}
-                >
-                  {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-gold rounded-full border-4 border-primary-purple hidden lg:block" />
-                  
-                  {/* Content */}
-                  <div className={`lg:w-1/2 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'} text-center lg:text-left`}>
-                    <div className="bg-white/5 backdrop-blur-custom border border-primary-indigo/20 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
-                      <div className="text-2xl font-bold text-primary-gold mb-2">{milestone.year}</div>
-                      <h3 className="text-xl font-semibold text-white mb-2">{milestone.title}</h3>
-                      <p className="text-gray-300">{milestone.description}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
           </div>
         </motion.div>
 

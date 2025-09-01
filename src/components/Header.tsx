@@ -21,10 +21,10 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary-purple/90 backdrop-blur-custom border-b border-primary-indigo/20">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-14 sm:h-16">
+        <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12">
+            <div className="relative w-12 h-12 sm:w-16 sm:h-16">
               <Image
                 src="/Vibesetter final logo.jpeg"
                 alt="Vibesetters Logo"

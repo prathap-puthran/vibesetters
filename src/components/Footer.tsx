@@ -73,10 +73,10 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-gray-300">
               <p>Phone: +91 94802 44135</p>
-              <p>Email: info@vibesetters.in</p>
+              <p>Email: vibesettersindia@gmail.com</p>
               <div className="pt-2">
                 <a 
-                  href="https://instagram.com/vibesetters" 
+                  href="https://instagram.com/vibesetters_india" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary-indigo hover:text-primary-accent transition-colors duration-200"

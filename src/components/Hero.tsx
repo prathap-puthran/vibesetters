@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-background via-primary-background/95 to-primary-background/80">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-background via-primary-background/95 to-primary-background/80 mt-20">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {[

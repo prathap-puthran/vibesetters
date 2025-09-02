@@ -10,10 +10,65 @@ const Hero = () => {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {[
-          { icon: '🎬', className: 'top-20 left-10 text-5xl text-primary-main/20', duration: 6 },
-          { icon: '📸', className: 'top-40 right-20 text-4xl text-primary-accent/25', duration: 8, delay: 1 },
-          { icon: '💃', className: 'bottom-40 left-20 text-4xl text-primary-highlight/25', duration: 7, delay: 2 },
-          { icon: '⭐', className: 'bottom-20 right-10 text-5xl text-primary-main/20', duration: 9, delay: 3 },
+          { 
+            icon: (
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            ), 
+            className: 'top-20 left-10 text-primary-main/20', 
+            duration: 6 
+          },
+          { 
+            icon: (
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            ), 
+            className: 'top-40 right-20 text-primary-accent/25', 
+            duration: 8, 
+            delay: 1 
+          },
+          { 
+            icon: (
+              <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            ), 
+            className: 'bottom-40 left-20 text-primary-highlight/25', 
+            duration: 7, 
+            delay: 2 
+          },
+          { 
+            icon: (
+              <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            ), 
+            className: 'bottom-20 right-10 text-primary-main/20', 
+            duration: 9, 
+            delay: 3 
+          },
+          { 
+            icon: (
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            ), 
+            className: 'top-60 left-1/3 text-primary-accent/15', 
+            duration: 5, 
+            delay: 0.5 
+          },
+          { 
+            icon: (
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            ), 
+            className: 'bottom-60 right-1/4 text-primary-highlight/18', 
+            duration: 10, 
+            delay: 4 
+          },
         ].map(({ icon, className, duration, delay = 0 }, i) => (
           <motion.div
             key={i}
@@ -74,7 +129,7 @@ const Hero = () => {
               <span className="px-3 py-1.5 bg-primary-highlight/10 backdrop-blur-sm rounded-full border border-primary-highlight/30 text-primary-highlight font-medium hover:bg-primary-highlight/20 transition-all duration-300">
                 Our Magic
               </span>
-              <span className="text-primary-highlight text-lg font-bold">✦</span>
+              <span className="text-primary-highlight text-lg font-bold hidden min-[430px]:inline">✦</span>
               <span className="px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white font-medium hover:bg-white/20 transition-all duration-300">
                 Endless Vibes
               </span>

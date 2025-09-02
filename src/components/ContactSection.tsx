@@ -53,8 +53,8 @@ const ContactSection = () => {
     {
       icon: <EnvelopeIcon className="w-6 h-6" />,
       title: 'Email',
-      value: 'info@vibesetters.in',
-      link: 'mailto:info@vibesetters.in'
+      value: 'vibesettersindia@gmail.com',
+      link: 'mailto:vibesettersindia@gmail.com'
     },
     {
       icon: <MapPinIcon className="w-6 h-6" />,
@@ -65,7 +65,7 @@ const ContactSection = () => {
     {
       icon: <ClockIcon className="w-6 h-6" />,
       title: 'Business Hours',
-      value: 'Mon - Sat: 9:00 AM - 7:00 PM',
+      value: 'Mon - Sun: 9:00 AM - 9:00 PM',
       link: null
     }
   ]

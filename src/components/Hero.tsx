@@ -143,7 +143,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.6 }}
           className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto mb-10"
         >
-          Welcome to <span className="font-semibold text-white">Vibesetters India</span>, your trusted partner in turning ideas into memorable experiences. From <span className="text-primary-accent">videography</span> and <span className="text-primary-accent">photography</span> to dance choreography, branding, and complete event management, we bring creativity and expertise together to make every celebration, corporate event, or project truly unforgettable.
+          Welcome To <span className="font-semibold text-white">Vibesetters India</span>, The One-Stop Destination For All Your Event Needs. Whether It's A <span className="text-primary-accent">Wedding</span>, <span className="text-primary-accent">Corporate Function</span>, Or <span className="text-primary-accent">Personal Celebration</span>, We Take Care Of Everything—From Concept To Execution. With <span className="text-primary-highlight">Creativity</span>, <span className="text-primary-highlight">Passion</span>, And <span className="text-primary-highlight">Attention To Detail</span>, We Ensure Your Event Is As Unique As Your Story.
         </motion.p>
 
 

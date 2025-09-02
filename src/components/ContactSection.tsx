@@ -111,7 +111,7 @@ const ContactSection = () => {
               </motion.div>
             )}
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <form className="space-y-6" action="https://formspree.io/f/xjkeejnk" method="POST">
               <div>
                 <label htmlFor="name" className="block text-white font-medium mb-2">
                   Full Name *
@@ -119,6 +119,7 @@ const ContactSection = () => {
                 <input
                   {...register('name', { required: 'Name is required' })}
                   type="text"
+                  name="name"
                   id="name"
                   className="w-full px-4 py-3 bg-white/10 border border-primary-indigo/30 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-indigo focus:border-transparent"
                   placeholder="Enter your full name"
@@ -141,6 +142,7 @@ const ContactSection = () => {
                     }
                   })}
                   type="email"
+                  name="email"
                   id="email"
                   className="w-full px-4 py-3 bg-white/10 border border-primary-indigo/30 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-indigo focus:border-transparent"
                   placeholder="Enter your email address"
@@ -157,6 +159,7 @@ const ContactSection = () => {
                 <input
                   {...register('phone')}
                   type="tel"
+                  name="phone"
                   id="phone"
                   className="w-full px-4 py-3 bg-white/10 border border-primary-indigo/30 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-indigo focus:border-transparent"
                   placeholder="Enter your phone number"
@@ -171,6 +174,7 @@ const ContactSection = () => {
                   {...register('message', { required: 'Message is required' })}
                   id="message"
                   rows={5}
+                  name="message"
                   className="w-full px-4 py-3 bg-white/10 border border-primary-indigo/30 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-indigo focus:border-transparent resize-none"
                   placeholder="Tell us about your project or inquiry..."
                 />

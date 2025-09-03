@@ -44,7 +44,7 @@ const PortfolioSection = () => {
       description: 'Experience the magic of "The Duet Delights" as they deliver a breathtaking couple dance performance. This stunning choreography blends romance, passion, and elegance, making it a must-watch for dance lovers!',
       image: '/api/placeholder/600/400',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/watch?v=88zHkG9M5UY'
+      videoUrl: 'https://youtu.be/88zHkG9M5UY'
     },
     {
       id: '2',
@@ -53,7 +53,7 @@ const PortfolioSection = () => {
       description: '',
       image: '/api/placeholder/600/400',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/shorts/tsZYyraRnbA'
+      videoUrl: 'https://www.youtube.com/shorts/tsZYyraRnbA?feature=share'
     },
 
   ]

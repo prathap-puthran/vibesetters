@@ -20,81 +20,42 @@ const PortfolioSection = () => {
 
   const filters = [
     { id: 'all', name: 'All Work' },
-    { id: 'weddings', name: 'Weddings' },
-    { id: 'corporate', name: 'Corporate' },
-    { id: 'branding', name: 'Branding' },
-    { id: 'events', name: 'Events' },
+    // { id: 'weddings', name: 'Weddings' },
+    // { id: 'corporate', name: 'Corporate' },
+    // { id: 'branding', name: 'Branding' },
+    // { id: 'events', name: 'Events' },
     { id: 'dance', name: 'Dance' }
   ]
 
   const portfolioItems: PortfolioItem[] = [
+    // {
+    //   id: '1',
+    //   title: 'Priya & Raj Wedding',
+    //   category: 'weddings',
+    //   description: 'A magical wedding celebration captured with cinematic beauty',
+    //   image: '/api/placeholder/600/400',
+    //   type: 'video',
+    //   videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    // },
     {
       id: '1',
-      title: 'Priya & Raj Wedding',
-      category: 'weddings',
-      description: 'A magical wedding celebration captured with cinematic beauty',
+      title: 'The Duet Delights',
+      category: 'dance',
+      description: 'Experience the magic of "The Duet Delights" as they deliver a breathtaking couple dance performance. This stunning choreography blends romance, passion, and elegance, making it a must-watch for dance lovers!',
       image: '/api/placeholder/600/400',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      videoUrl: 'https://www.youtube.com/watch?v=88zHkG9M5UY'
     },
     {
       id: '2',
-      title: 'TechCorp Brand Launch',
-      category: 'corporate',
-      description: 'Complete brand identity and launch event management',
-      image: '/api/placeholder/600/800',
-      type: 'image'
-    },
-    {
-      id: '3',
-      title: 'Bollywood Dance Performance',
+      title: 'APL 2023 season',
       category: 'dance',
-      description: 'Energetic dance routine for corporate annual day',
-      image: '/api/placeholder/600/500',
-      type: 'video',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
-    },
-    {
-      id: '4',
-      title: 'Luxury Hotel Opening',
-      category: 'events',
-      description: 'Grand opening ceremony with live entertainment',
-      image: '/api/placeholder/600/600',
-      type: 'image'
-    },
-    {
-      id: '5',
-      title: 'Fashion Brand Identity',
-      category: 'branding',
-      description: 'Complete logo design and brand guidelines',
+      description: '',
       image: '/api/placeholder/600/400',
-      type: 'image'
-    },
-    {
-      id: '6',
-      title: 'Destination Wedding',
-      category: 'weddings',
-      description: 'Beach wedding with drone cinematography',
-      image: '/api/placeholder/600/700',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      videoUrl: 'https://www.youtube.com/shorts/tsZYyraRnbA'
     },
-    {
-      id: '7',
-      title: 'Product Launch Event',
-      category: 'corporate',
-      description: 'Innovative product launch with interactive elements',
-      image: '/api/placeholder/600/500',
-      type: 'image'
-    },
-    {
-      id: '8',
-      title: 'Classical Dance Show',
-      category: 'dance',
-      description: 'Traditional Indian classical dance performance',
-      image: '/api/placeholder/600/600',
-      type: 'image'
-    }
+
   ]
 
   const filteredItems = activeFilter === 'all' 

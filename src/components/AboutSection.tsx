@@ -7,6 +7,7 @@ import {
   StarIcon,
   CheckCircleIcon
 } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 const AboutSection = () => {
   const teamMembers = [
@@ -15,14 +16,14 @@ const AboutSection = () => {
       role: 'Founder & Creative Director',
       bio: 'A visionary creative professional with over 8 years of experience in event management and creative services. Passionate about turning ideas into unforgettable experiences.',
       quote: '"Every event is a story waiting to be told, and we are the storytellers."',
-      image: '/api/placeholder/300/300'
+      image: '/vishwas.jpeg'
     },
     {
       name: 'Sushanth Poojary',
       role: 'Co-Founder & Technical Director',
       bio: 'Expert in videography, photography, and technical production. Brings technical excellence and innovative solutions to every project.',
       quote: '"Technology meets creativity to create magic that lasts forever."',
-      image: '/api/placeholder/300/300'
+      image: '/sushanth.jpeg'
     }
   ]
 
@@ -189,8 +190,17 @@ const AboutSection = () => {
               >
                 <div className="text-center mb-6">
                   <div className="w-32 h-32 bg-gradient-to-br from-primary-indigo/20 to-primary-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="text-6xl">👤</div>
-                  </div>
+                    <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill={false}
+                        width={500}
+                        height={500}
+                        className="w-32 h-32 relative rounded-full object-cover"
+                        priority={true}
+                      />
+                    </div>
+
                   <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
                   <p className="text-primary-indigo font-medium">{member.role}</p>
                 </div>

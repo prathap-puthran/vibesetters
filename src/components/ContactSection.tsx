@@ -47,8 +47,14 @@ const ContactSection = () => {
     {
       icon: <PhoneIcon className="w-6 h-6" />,
       title: 'Phone',
-      value: '+91 94802 44135',
+      value: '+91 9480244135',
       link: 'tel:+919480244135'
+    },
+    {
+      icon: <PhoneIcon className="w-6 h-6" />,
+      title: 'Phone 2',
+      value: '+91 7259552784',
+      link: 'tel:+917259552784'
     },
     {
       icon: <EnvelopeIcon className="w-6 h-6" />,

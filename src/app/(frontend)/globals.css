@@ -101,3 +101,7 @@
     background: linear-gradient(135deg, #12084a 0%, #24a4ef 50%, #dd717e 100%);
   }
 } 
+
+.body > main > section > div > div:nth-child(4) > div > div:nth-child(1) > div > div > img{
+  object-position: right;
+}

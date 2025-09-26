@@ -102,6 +102,6 @@
   }
 } 
 
-.body > main > section > div > div:nth-child(4) > div > div:nth-child(1) > div > div > img{
+body > main > section > div > div:nth-child(4) > div > div:nth-child(1) > div > div > img{
   object-position: right;
 }
